@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Dancing+Script&family=Kings&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+@keyframes moving {
+  0% { transform: translate(1px, 0px); }
+  20% { transform: translate(-2px, 0px); }
+  40% { transform: translate(4px, 0px); }
+  60% { transform: translate(-4px, 0px); }
+  80% { transform: translate(4px, 0px); }
+  100% { transform: translate(-4px, 0px); }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+###########################################################
+###########################################################
+###########################################################
+
+
+.main {
+    margin:auto;
+    padding:0;
+    width: 70%;
+    height: 100vh;
+    background:  black;
+}
+
+a {
+    text-decoration: none;
+    color: #FF00BB;
+}
+
+.brand {
+    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8rem;
+}
+
+.menu {
+    text-decoration: underline;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.cursor {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+.home_view p:nth-child(1) {
+    text-align: start;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6BFF9C;
+    transform: translate(8%, 80%);
+}
+
+.home_view p:nth-child(2) {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6BFF9C;
+}
+
+.home_view p:nth-child(2) span {
+    text-align: center;
+    font-family: 'Kings', cursive;
+    font-size: 10rem;
+    color: #39FF14;
+}
+
+.home_view p:nth-child(3) {
+    text-align: end;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6BFF9C;
+    transform: translate(-10%, -150%);
+}
+
+/* datetime styling */
+.clock{
+    margin-left: 20px;
+    transform: translate(0%, 17%);
+    padding-top:15px;
+    padding-left: 20px;
+    border: white solid 1px;
+    border-radius: 10px;
+    color: #BC13FE;
+}
+
+.date-time {
+    letter-spacing: 6.3px;
+}
+
+p.date-time span:nth-child(2) {
+    font-size: 2.5rem;
+    letter-spacing: 0px;
+    font-weight: bold;
+}
+
+p.date-time span:nth-child(4) {
+    text-align: center;
+    letter-spacing: 23.5px;
+}
+
+
+/* Arrow styling */
+.arrow{
+    text-align: center;
+    font-size: 3rem;
+    color: grey;
+}
+
+.arrow a i:hover {
+    text-shadow: 2px 0px 2px white;
+    animation: moving 0.5s;
+}
+
+.uparrow {
+    transform: translate(50%, 50%);
+}
+
+.uparrow a i:hover {
+    text-shadow: 2px 0px 2px black;
+    animation: moving 0.5s;
+}
+
+.up_arrow {
+    font-size: 50px;
+}
+
+
+/* About styling */
+.about_page{
+    width:100%;
+    height: 100vh;
+    background: #f2f2f2;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.about_page .container {
+    width: 60%;
+}
+
+.about_page .container p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.about_info img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+table td i:hover {
+    transform: scale(4);
+}
+
+
+
+

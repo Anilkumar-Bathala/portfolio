@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equip="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/CSS/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="static/CSS/max480px.css">
+    <script src="https://kit.fontawesome.com/21df5adffb.js" crossorigin="anonymous"></script>
+    <title>portfolio</title>
+    <style>
+    body {
+        overflow: hidden;
+        background: black;
+    }
+    </style>
+</head>
+<body>
+<div class="main" id="main">
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-brand">
+                <a href="#" class="brand">Portfolio</a></li>
+            </div>
+            <div class="d-flex">
+                <ul class="nav justify-content-end flex-column">
+                    <li class="nav-item"><a href="#main" class="menu home">HOME</a></li>
+                    <li class="nav-item"><a href="#about_page" class="menu about">ABOUT</a></li>
+                    <li class="nav-item"><a href="https://drive.google.com/file/d/1h7qkecGm0DjZdJnTTwTgzaQuDw8E9xxk/view?usp=share_link" target="_blank" class="menu resume">RESUME</a></li>
+                    <li class="nav-item"><a href="#" class="menu projects">PROJECTS</a></li>
+                </ul>
+                <div class="clock">
+                    <p class="date-time" id="date-time"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="home_view">
+            <p>Hey Amigos</p>
+            <p> I'm &nbsp; <span class="name" id="name"></span></p>
+            <p> I'm glade to your here. :)</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="arrow">
+            <a href="#about_page"><i class="fa-solid fa-angle-down"></i></a>
+        </div>
+    </div>
+</div>
+<div class="cursor"></div>
+<div class="about_page" id="about_page">
+    <div class="container">
+        <div style="height:20px;"></div>
+        <div class="about_info">
+            <p><img src="{% static 'images/profile.jpg' %}" alt="profile picture">
+                My name is Anil kumar, I have done My MCA in Dravidian university.
+                I'm tech lover. I'm enthusiast to learn new technologies. I have spent countless nights to write code.
+                Present I'm seeking for job I thought need real time work experience. I have good in Python django web
+                application development using django. I believe that the projects I have worked on have been the highlight
+                of my education journey. I have done some projects in graduation and post graduation I provided that
+                here visit projects give me suggestions I can take every suggestion from you. That maybe improve my skills.
+            </p>
+            <p>Coming to my hobbies I love to spend time with friends. Badminton Player, In day most of the time I'm Hackerrank
+            and Code Studio to practise my skills.</p>
+            <p>I have enthusiast became a Ethical Hacker, Learning skills to became ethical hacker, security analyst,
+                bug hunter or Cyber Security.</p>
+        </div>
+        <table>
+            <thead><h3>contact me through</h3></thead>
+            <tr>
+                <td>Mobile number : </td>
+                <td>9676375455</td>
+            </tr>
+            <tr>
+                <td>Email ID : </td>
+                <td>anilkumar.bathala@yahoo.com</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><a target="_blank" href="https://www.facebook.com/AnilKumar4922251?mibextid=ZbWKwL"><i class="text-primary m-2 fa-brands fa-facebook"></i></a></td>
+                <td><a target="_blank" href="https://instagram.com/anil_kumar_.b?igshid=YmJhNjkzNzY="><i class="m-2 fa-brands fa-instagram"></i></a></td>
+                <td><a target="_blank" href="https://github.com/Anilkumar-Bathala"><i class="text-dark m-2 fa-brands fa-github"></i></a></td>
+                <td><a target="_blank" href="https://www.linkedin.com/in/anilbathala"><i class="text-primary m-2 fa-brands fa-linkedin"></i></a></td>
+                <td><a target="_blank" href="https://www.hackerrank.com/anilkumar_batha1"><i class="text-success m-2 fa-brands fa-hackerrank"></i></a></td>
+                <td><a target="_blank" href="https://twitter.com/anilkumar_2000?t=jUrb8rrOyMuHxZSsTnYViA&s=09"><i class="text-info m-2 fa-brands fa-twitter"></i></a></td>
+            </tr>
+        </table>
+        <div class="uparrow"><a href="#main"><i class="up_arrow fa-solid fa-angle-up"></i></a></div>
+    </div>
+</div>    
+
+
+
+
+<!--Scripts-->
+<script src="static/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script src="static/JS/scramble.js"></script>
+<script>
+    const phrases = [
+      'Anil kumar',
+      'Developer',
+      'Tech Lover',
+      'python Lover',
+    ];
+
+    const el = document.querySelector('.name');
+    const fx = new TextScramble(el);
+    let counter = 0;
+
+    const next = () => {
+      fx.setText(phrases[counter]).then(() => {
+        setTimeout(next, 800);
+      })
+      counter = (counter + 1) % phrases.length;
+    };
+
+    next();
+</script>
+
+<script src="static/JS/index.js"></script>
+</body>
+</html>
