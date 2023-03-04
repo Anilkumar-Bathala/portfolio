@@ -13,7 +13,7 @@
 .brand {
     text-decoration: underline;
     font-family: 'Bebas Neue', cursive;
-    font-size: 8.5rem;
+    font-size: 6rem;
     text-align:center;
 }
 
@@ -25,7 +25,20 @@
 }
 
 .clock{
-    transform: translate(10%, 17%);
+    transform: translate(10%, 10%);
+}
+
+.date-time {
+    letter-spacing: 3px;
+}
+
+p.date-time span:nth-child(2) {
+    font-size: 1.5rem;
+}
+
+p.date-time span:nth-child(4) {
+    text-align: center;
+    letter-spacing: 16.5px;
 }
 
 .home_view p:nth-child(1) {
@@ -33,11 +46,11 @@
 }
 
 .home_view p:nth-child(2) {
-    transform: translate(0%, 120%);
+    transform: translate(0%, 150%);
 }
 
 .home_view p:nth-child(2) span {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .home_view p:nth-child(3) {
