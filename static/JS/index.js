@@ -67,7 +67,7 @@ window.addEventListener("load", () => {
     const time = hourTime + ":" + minute + ":" + second + ampm;
 
     //combine current date and time
-    const dateTime = date + " <br><span> " + time +"</span> <br> <span>" + weekdays[weekday] + "</span>";
+    const dateTime = date + " <br><span> " + time +"</span> <span>" + weekdays[weekday] + "</span>";
 
     //print current date and time to the DOM
     document.getElementById("date-time").innerHTML = dateTime;

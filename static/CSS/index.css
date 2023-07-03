@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Dancing+Script&family=Kings&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Unna&display=swap');
 
 @keyframes moving {
   0% { transform: translate(1px, 0px); }
@@ -28,6 +28,12 @@
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 .brand h1{
@@ -40,6 +46,7 @@ a {
 .menu {
     font-family: 'Lato', sans-serif;
     font-size: 15px;
+    margin-top: 1rem;
 }
 
 .clock {
@@ -49,6 +56,10 @@ a {
     color: #BC13FE;
     border: 2px solid white;
     border-radius: 10px;
+}
+
+.date-time {
+    margin-top: 1rem;
 }
 
 .date-time span:nth-child(2) {
@@ -142,7 +153,7 @@ table td i:hover {
     text-align: right;
     font-size: 1.5rem;
     font-family: 'Prompt', sans-serif;
-    color: coral;
+    color:crimson;
 }
 
 #EducationSection .education_educations_col .education_education_item h4 {
@@ -174,4 +185,33 @@ table td i:hover {
 #SkillSection .skill p {
     color: chartreuse;
     margin-top: 1rem;
+}
+
+/* projects */
+
+#project_section {
+    margin-top: 5rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#project_section h4 {
+    font-size: 4rem;
+    color:darkorange;
+}
+
+#project_section .project {
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+#project_section .project .project_info .project_info_col h4 {
+    font-size: 1.5rem;
+    color:springgreen;
+    font-family: 'Unna', serif;
+}
+
+#project_section .project .project_info .project_info_col p {
+    color:chocolate;
+    font-family: 'Inconsolata', monospace;
+    text-align: justify;
 }
