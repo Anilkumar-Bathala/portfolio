@@ -215,3 +215,15 @@ table td i:hover {
     font-family: 'Inconsolata', monospace;
     text-align: justify;
 }
+
+#project_section span {
+    color: greenyellow;
+    text-align: left;
+}
+
+#project_section ul {
+    color: chocolate;
+    text-align: justify;
+}
+
+
