@@ -210,20 +210,21 @@ table td i:hover {
     font-family: 'Unna', serif;
 }
 
-#project_section .project .project_info .project_info_col p {
+#project_section .project .project_info .project_info_col .description {
     color:chocolate;
     font-family: 'Inconsolata', monospace;
-    text-align: justify;
-}
-
-#project_section span {
-    color: greenyellow;
     text-align: left;
 }
 
-#project_section ul {
-    color: chocolate;
+#project_section .project .project_info .project_info_col .description span {
+    color: greenyellow;
+}
+
+#project_section .project .project_info .project_info_col .description p {
     text-align: justify;
 }
 
+#project_section .project .project_info .project_info_col .description li {
+    text-align: justify;
+}
 
